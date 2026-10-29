@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU宛て 郵便とSpeedPAK Economy 料金くらべ（2026年11月1日から）</title>
+<style>
+  :root {
+    --accent: #1a73e8; --accent-light: #e8f0fe;
+    --wrong-bg: #fdecea; --wrong-text: #c62828;
+    --correct-bg: #e6f4ea; --correct-text: #2e7d32;
+    --orange-bg: #fff3e0; --orange-text: #b45309;
+    --gray: #607d8b; --navy: #0b2447;
+    --bg: #f5f7fa; --card: #fff; --text: #222; --muted: #666; --line: #e3e3e3; --sub: #f5f7fa; --strong: #0b3d91;
+    --fs-note: 13px; --fs-label: 15px; --fs-body: 16px; --fs-sub: 17px; --fs-heading: 19px;
+    --radius-box: 14px; --radius-band: 10px; --border-w: 2px; --pad-roomy: 16px 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent-light: #15263f; --wrong-bg: #3a1a18; --wrong-text: #ff8a80; --correct-bg: #14301b; --correct-text: #81c995;
+      --orange-bg: #3b2a12; --orange-text: #ffb74d; --bg: #12151a; --card: #1c2027; --text: #e8eaed; --muted: #aab; --line: #333a44; --sub: #232830; --strong: #8ab4f8; --navy: #1f3a6b;
+    }
+    a { color: #8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+    font-size: var(--fs-body); line-height: 1.8; word-break: break-word; }
+  header.page-title { background: var(--accent); color: #fff; padding: 28px 16px; text-align: center; }
+  header.page-title h1 { margin: 0; font-size: 22px; line-height: 1.5; }
+  header.page-title .subtitle { margin: 10px auto 0; max-width: 760px; line-height: 1.7; }
+  header.page-title .notice { margin: 12px auto 0; font-size: var(--fs-note); background: rgba(255,255,255,0.18); display: inline-block; padding: 4px 12px; border-radius: 999px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  section.card { background: var(--card); border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 24px 32px; margin-bottom: 20px; }
+  h2 { color: var(--accent); font-size: var(--fs-heading); border-left: 6px solid var(--accent); padding-left: 10px; margin-top: 0; }
+  h3 { font-size: var(--fs-sub); margin: 22px 0 8px; }
+  p { margin: 10px 0; }
+  a { color: var(--accent); }
+  .small-note, .source-note { font-size: var(--fs-note); color: var(--muted); margin: 8px 0; }
+  .point-box { background: var(--accent-light); border: var(--border-w) solid var(--accent); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; font-weight: bold; font-size: var(--fs-heading); color: var(--strong); text-align: center; }
+  .caution-box { background: var(--wrong-bg); border: var(--border-w) solid var(--wrong-text); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; }
+  .ok-box { background: var(--correct-bg); border: var(--border-w) solid var(--correct-text); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; }
+  .plain-box { background: var(--sub); border: var(--border-w) solid var(--gray); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; }
+  .caution-box h3, .ok-box h3, .plain-box h3 { margin-top: 0; }
+  .caution-box p:last-child, .ok-box p:last-child, .plain-box p:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; border: 1px solid var(--line); border-radius: var(--radius-band); max-width: 100%; }
+  table.data { border-collapse: collapse; width: 100%; font-size: var(--fs-label); background: var(--card); }
+  table.data th, table.data td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; line-height: 1.5; }
+  table.data thead th { background: var(--navy); color: #fff; text-align: center; white-space: nowrap; }
+  table.data tbody th { font-weight: bold; background: var(--sub); white-space: nowrap; }
+  table.wrap td, table.wrap th { white-space: normal; vertical-align: top; }
+  table.cmp td { text-align: center; font-weight: bold; min-width: 6.5em; }
+  table.cmp td.g { background: var(--correct-bg); color: var(--correct-text); }
+  table.cmp td.o { background: var(--orange-bg); color: var(--orange-text); }
+  table.cmp td.e { background: var(--sub); }
+  table.full td { text-align: right; }
+  table.mark td.mk { text-align: center; font-size: 22px; line-height: 1.2; }
+  table.mark td.ok { background: var(--correct-bg); } table.mark td.ng { background: var(--sub); }
+  .pid-list { display: grid; gap: 8px; margin: 10px 0; }
+  .pid { display: grid; grid-template-columns: 1fr auto; column-gap: 10px; align-items: center; border: 2px solid; border-radius: var(--radius-band); padding: 8px 12px; }
+  .pid.ok { background: var(--correct-bg); border-color: var(--correct-text); } .pid.ng { background: var(--sub); border-color: var(--gray); }
+  .pid .pn { font-weight: bold; } .pid .pm { font-size: 24px; grid-row: 1 / span 2; grid-column: 2; } .pid .pt { font-size: var(--fs-note); }
+  table.cmp td .amt { display: block; font-size: 18px; white-space: nowrap; line-height: 1.3; }
+  table.cmp td .lb { display: block; font-size: 11px; font-weight: normal; white-space: nowrap; }
+  table.cmp tbody th { position: sticky; left: 0; z-index: 1; }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .btns button { font: inherit; font-weight: bold; border: 2px solid var(--accent); background: var(--card); color: var(--accent); border-radius: 999px; padding: 6px 16px; cursor: pointer; }
+  .btns button.on { background: var(--accent); color: #fff; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: var(--fs-note); margin: 6px 0; }
+  .legend .g { color: var(--correct-text); font-weight: bold; } .legend .o { color: var(--orange-text); font-weight: bold; }
+  .step { display: flex; align-items: center; gap: 10px; background: var(--accent-light); border: var(--border-w) solid var(--accent); border-radius: var(--radius-box); padding: 12px 14px; font-weight: bold; font-size: var(--fs-sub); color: var(--strong); }
+  .arrow { text-align: center; font-size: 22px; line-height: 1.2; color: #888; margin: 4px 0; }
+  .paths { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 4px 0; }
+  .path { display: flex; flex-direction: column; min-width: 0; }
+  .pill { text-align: center; color: #fff; font-weight: bold; border-radius: 999px; padding: 6px 10px; font-size: var(--fs-label); line-height: 1.4; }
+  .goal { flex: 1; border-radius: var(--radius-box); padding: 14px; border: var(--border-w) solid; min-width: 0; }
+  .goal .gicon { font-size: 30px; line-height: 1.2; }
+  .goal .gtitle { font-weight: bold; font-size: var(--fs-sub); line-height: 1.5; margin: 4px 0 6px; }
+  .goal .gsub { font-size: var(--fs-note); margin: 6px 0 8px; line-height: 1.6; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px 5px; }
+  .chip { background: var(--card); border: 1px solid #aaa; border-radius: 999px; padding: 0 8px; font-size: 13px; line-height: 1.7; }
+  .p1 .pill { background: var(--accent); } .p1 .goal { background: var(--accent-light); border-color: var(--accent); }
+  .p2 .pill { background: var(--gray); } .p2 .goal { background: var(--sub); border-color: var(--gray); }
+  .p3 .pill { background: var(--wrong-text); } .p3 .goal { background: var(--wrong-bg); border-color: var(--wrong-text); }
+  .calc { list-style: none; padding: 0; margin: 8px 0; }
+  .calc li { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed var(--line); padding: 4px 0; font-size: var(--fs-label); }
+  .calc li b { white-space: nowrap; }
+  .calc li.tot { border-bottom: 0; font-weight: bold; font-size: var(--fs-sub); }
+  .two { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+  .box { border: 2px solid var(--accent); border-radius: var(--radius-box); padding: 12px 14px; min-width: 0; background: var(--card); }
+  .box.mail { border-color: var(--gray); }
+  .box h4 { margin: 0 0 6px; color: var(--strong); font-size: var(--fs-sub); }
+  details.more { background: var(--card); border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 6px 20px; margin-bottom: 14px; }
+  details.more > summary { cursor: pointer; font-weight: bold; color: var(--accent); font-size: var(--fs-sub); padding: 12px 0; line-height: 1.5; }
+  details.more[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 10px; }
+  details.sub { margin: 6px 0; }
+  details.sub > summary { cursor: pointer; font-weight: bold; padding: 6px 0; }
+  .memo { background: #fffbe6; border: 2px solid #f0d36b; border-radius: var(--radius-box); padding: 12px 16px; margin-bottom: 20px; color: #333; }
+  .memo h2 { border-left-color: #d4a017; color: #8a6d00; font-size: var(--fs-sub); margin-bottom: 6px; }
+  .memo ul { list-style: none; margin: 0; padding: 0; font-size: var(--fs-label); line-height: 1.6; }
+  .memo li { margin: 8px 0; }
+  ul.links { padding-left: 1.2em; margin: 0; } ul.links li { margin-bottom: 8px; }
+  footer { font-size: var(--fs-note); color: var(--muted); padding: 20px 16px 40px; max-width: 1100px; margin: 0 auto; }
+  footer p.center { text-align: center; }
+  @media (max-width: 700px) {
+    section.card { padding: 20px 16px; }
+    header.page-title h1 { font-size: 20px; }
+    .paths, .two { grid-template-columns: 1fr; }
+    details.more { padding: 4px 14px; }
+  }
+</style>
+</head>
+<body>
+<header class="page-title">
+  <h1>EU宛て 郵便とSpeedPAK Economy 料金くらべ（2026年11月1日から）</h1>
+  <p class="subtitle">150ユーロ以下のEU宛て注文を、日本郵便（国際エアパケット）で送る場合と、SpeedPAK Economyで送る場合。国・重さ・月の発送件数ごとに、どちらが安いかを表にしました。</p>
+  <span class="notice">公開日 2026-10-29 ／ 料金は2026年10月時点</span>
+</header>
+<main>
+
+<section class="card" id="oshirase">
+  <div class="caution-box">
+    <h3>⚠️ 前の記事の訂正とおわび</h3>
+    <p>以前の記事「<a href="https://naokijodan.github.io/ebay-eu-game-shipping-guide/" target="_blank" rel="noopener">エコノミー発送の送り方ガイド（アメリカ・EU）</a>」で、「日本郵便が受取人払い（DAP）だけ受け付ける11か国にも、郵便で送れる」と書きました。<b>これは筆者の記事の誤りでした。申し訳ありません。</b></p>
+    <p>日本郵便がその11か国の荷物を受け付けるのは事実です。しかしeBayは、<b>2026年10月1日から、日本発・150ユーロ以下のEU宛て注文は「関税込み（DDP）」で送ること</b>を求めています。買い手の画面にも「輸入にかかる費用は込み。支払い後に払うものはありません」と出ます（キプロスの出品ページで確認）。受取人払いで送ると、買い手が<b>二重に払うことになってしまいます</b>。</p>
+    <p><b>この11か国は、SpeedPAK Economyで送ってください。</b></p>
+  </div>
+  <div class="plain-box"><h3>受取人払いだけの11か国（→SpeedPAK Economy）</h3><div class="chips"><span class="chip">アイルランド</span><span class="chip">キプロス</span><span class="chip">ギリシャ</span><span class="chip">クロアチア</span><span class="chip">スロベニア</span><span class="chip">ハンガリー</span><span class="chip">ブルガリア</span><span class="chip">ポーランド</span><span class="chip">ラトビア</span><span class="chip">リトアニア</span><span class="chip">ルーマニア</span></div></div>
+</section>
+
+<section class="card" id="ketsuron">
+  <h2>結論の図：どの国は、どう送る？</h2>
+  <div class="step"><span>🛒</span><span>EU宛ての注文（150ユーロ以下）</span></div>
+  <div class="arrow">▼ 送り先の国は？</div>
+  <div class="paths">
+    <div class="path p1"><div class="pill">① 郵便OKの11か国</div><div class="goal">
+      <div class="gicon">⚖️</div><div class="gtitle">Ship&amp;coと契約あり → 郵便とSpeedPAK Economyを比べる</div>
+      <p class="gsub">比べるのは、このページの表です。Ship&amp;coがない人は → SpeedPAK Economy</p><p class="gsub">郵便で送るときも、受取人払い（DAP）にはせず、Ship&amp;co（Zonos）で関税込み（DDP）にします。</p>
+      <div class="chips"><span class="chip">イタリア</span><span class="chip">エストニア</span><span class="chip">オランダ</span><span class="chip">スウェーデン</span><span class="chip">スペイン</span><span class="chip">スロバキア</span><span class="chip">デンマーク</span><span class="chip">フィンランド</span><span class="chip">フランス</span><span class="chip">マルタ</span><span class="chip">ルクセンブルク</span></div></div></div>
+    <div class="path p2"><div class="pill">② 受取人払いだけの11か国</div><div class="goal">
+      <div class="gicon">📦</div><div class="gtitle">SpeedPAK Economy</div>
+      <p class="gsub">関税込み（DDP）で送れないため</p>
+      <div class="chips"><span class="chip">アイルランド</span><span class="chip">キプロス</span><span class="chip">ギリシャ</span><span class="chip">クロアチア</span><span class="chip">スロベニア</span><span class="chip">ハンガリー</span><span class="chip">ブルガリア</span><span class="chip">ポーランド</span><span class="chip">ラトビア</span><span class="chip">リトアニア</span><span class="chip">ルーマニア</span></div></div></div>
+    <div class="path p3"><div class="pill">③ 郵便では送れない5か国</div><div class="goal">
+      <div class="gicon">📦</div><div class="gtitle">SpeedPAK Economy</div>
+      <p class="gsub">日本郵便で受け付けていないため</p>
+      <div class="chips"><span class="chip">オーストリア</span><span class="chip">チェコ</span><span class="chip">ドイツ</span><span class="chip">ベルギー</span><span class="chip">ポルトガル</span></div></div></div>
+  </div>
+  <div class="plain-box">
+    <h3>11月1日からの新ルール「PID（製品識別コード）」</h3>
+    <p>2026年11月1日から、EU宛てはPIDの送信が必要になります。</p>
+    <div class="pid-list">
+      <div class="pid ok"><div class="pn">SpeedPAK Economy（CPaSS）</div><div class="pm">⭕️</div><div class="pt">出品データから自動で入ります</div></div>
+      <div class="pid ok"><div class="pn">Ship&amp;co（Zonos経由）</div><div class="pm">⭕️</div><div class="pt">Zonos経由で送られます（Ship&amp;coサポートの回答）</div></div>
+      <div class="pid ng"><div class="pn">Zonosのウェブ・アプリ（単独）</div><div class="pm">❌</div><div class="pt">PIDを入れる欄がありません</div></div>
+      <div class="pid ng"><div class="pn">日本郵便のふつうのラベル（国際郵便マイページなど）</div><div class="pm">❌</div><div class="pt">PIDを送れません</div></div>
+    </div>
+    <p class="small-note">だから、郵便で送るならShip&amp;co経由が前提です。</p>
+  </div>
+</section>
+
+<section class="card" id="hikaku">
+  <h2>料金くらべの表（1件あたり、どちらがいくら安いか）</h2>
+  <div class="caution-box"><p><b>この表の計算は、すべて「1品（HSコード1つ）」の荷物です。</b>関税・EU取扱手数料・PIDは品目ごとにかかります。2品なら、関税とEU取扱手数料がそれぞれ2倍になります。</p></div>
+  <p>郵便の費用には、Ship&amp;coの月額1,100円を「月の発送件数」で割った分を入れています。件数を選んでください。</p>
+  <div class="btns" id="btns" role="group" aria-label="月の発送件数">
+    <button type="button" data-n="1">月1件</button><button type="button" data-n="3">月3件</button><button type="button" data-n="5">月5件</button><button type="button" data-n="10" class="on">月10件</button><button type="button" data-n="30">月30件</button>
+  </div>
+  <p class="small-note" id="nnote">いま表示：月10件（1件あたり月額110円）</p>
+  <div class="legend"><span class="g">■ 緑：郵便のほうが安い</span><span class="o">■ オレンジ：SpeedPAKのほうが安い</span></div>
+  <div class="table-wrap"><table class="data cmp" id="cmp"><thead><tr><th>国</th><th>100g</th><th>300g</th><th>500g</th><th>1kg</th><th>1.5kg</th><th>2kg</th></tr></thead><tbody><tr><th>イタリア</th><td class="g" data-d="870"><span class="amt">760円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1030"><span class="amt">920円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1417"><span class="amt">1,307円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2010"><span class="amt">1,900円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1711"><span class="amt">1,601円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="3426"><span class="amt">3,316円</span><span class="lb">郵便が安い</span></td></tr><tr><th>エストニア</th><td class="g" data-d="1290"><span class="amt">1,180円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1539"><span class="amt">1,429円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2110"><span class="amt">2,000円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="3064"><span class="amt">2,954円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2764"><span class="amt">2,654円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="4686"><span class="amt">4,576円</span><span class="lb">郵便が安い</span></td></tr><tr><th>オランダ</th><td class="g" data-d="994"><span class="amt">884円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1087"><span class="amt">977円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1328"><span class="amt">1,218円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1643"><span class="amt">1,533円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1343"><span class="amt">1,233円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2691"><span class="amt">2,581円</span><span class="lb">郵便が安い</span></td></tr><tr><th>スウェーデン</th><td class="g" data-d="468"><span class="amt">358円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="557"><span class="amt">447円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="797"><span class="amt">687円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1207"><span class="amt">1,097円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="908"><span class="amt">798円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2366"><span class="amt">2,256円</span><span class="lb">郵便が安い</span></td></tr><tr><th>スペイン</th><td class="g" data-d="433"><span class="amt">323円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="597"><span class="amt">487円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="983"><span class="amt">873円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1577"><span class="amt">1,467円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1277"><span class="amt">1,167円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2959"><span class="amt">2,849円</span><span class="lb">郵便が安い</span></td></tr><tr><th>スロバキア</th><td class="g" data-d="1058"><span class="amt">948円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1254"><span class="amt">1,144円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1710"><span class="amt">1,600円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2440"><span class="amt">2,330円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2140"><span class="amt">2,030円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="3956"><span class="amt">3,846円</span><span class="lb">郵便が安い</span></td></tr><tr><th>デンマーク</th><td class="g" data-d="1042"><span class="amt">932円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1140"><span class="amt">1,030円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1381"><span class="amt">1,271円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1690"><span class="amt">1,580円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1390"><span class="amt">1,280円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2759"><span class="amt">2,649円</span><span class="lb">郵便が安い</span></td></tr><tr><th>フィンランド</th><td class="g" data-d="2218"><span class="amt">2,108円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2312"><span class="amt">2,202円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2554"><span class="amt">2,444円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2860"><span class="amt">2,750円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2561"><span class="amt">2,451円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="4281"><span class="amt">4,171円</span><span class="lb">郵便が安い</span></td></tr><tr><th>フランス</th><td class="g" data-d="832"><span class="amt">722円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1026"><span class="amt">916円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1530"><span class="amt">1,420円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2202"><span class="amt">2,092円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1903"><span class="amt">1,793円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="3680"><span class="amt">3,570円</span><span class="lb">郵便が安い</span></td></tr><tr><th>マルタ</th><td class="g" data-d="2041"><span class="amt">1,931円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="2481"><span class="amt">2,371円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="3407"><span class="amt">3,297円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="5095"><span class="amt">4,985円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="4795"><span class="amt">4,685円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="8092"><span class="amt">7,982円</span><span class="lb">郵便が安い</span></td></tr><tr><th>ルクセンブルク</th><td class="o" data-d="36"><span class="amt">74円</span><span class="lb">SpeedPAKが安い</span></td><td class="g" data-d="142"><span class="amt">32円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="435"><span class="amt">325円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="813"><span class="amt">703円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="513"><span class="amt">403円</span><span class="lb">郵便が安い</span></td><td class="g" data-d="1949"><span class="amt">1,839円</span><span class="lb">郵便が安い</span></td></tr></tbody></table></div>
+  <p class="small-note">表の金額は、1件あたりの総額の差です（関税・各手数料・Ship&amp;coの費用を含む）。横にスクロールできます。</p>
+
+  <h3>計算の例：イタリア宛て 100g</h3>
+  <div class="two">
+    <div class="box"><h4>📦 SpeedPAK Economy</h4><ul class="calc">
+      <li><span>基本運賃 1,996円 ×1.15（燃油15%）</span><b>2,295円</b></li>
+      <li><span>混雑時割増金</span><b>34円</b></li>
+      <li><span>関税（3ユーロ）</span><b>555円</b></li>
+      <li><span>EU取扱手数料（2ユーロ）</span><b>370円</b></li>
+      <li><span>通関処理手数料（約）</span><b>19円</b></li>
+      <li class="tot"><span>合計</span><b>3,274円</b></li></ul></div>
+    <div class="box mail"><h4>✉️ 郵便（エアパケット＋Ship&amp;co）</h4><ul class="calc">
+      <li><span>国際エアパケット（国際特定記録370円込み）</span><b>880円</b></li>
+      <li><span>関税（3ユーロ）</span><b>555円</b></li>
+      <li><span>EU取扱手数料（2ユーロ）</span><b>370円</b></li>
+      <li><span>PDDP追加料金 1€（約186円）</span><b>186円</b></li>
+      <li><span>Zonos手数料 1.69ドル（約280円）</span><b>280円</b></li>
+      <li><span>Zonosの10%部分（関税＋EU取扱手数料＋PDDP追加料金の10%）</span><b>111円</b></li>
+      <li><span>Ship&amp;co 1枚</span><b>22円</b></li>
+      <li class="tot"><span>合計（月額を除く）</span><b>2,404円</b></li></ul></div>
+  </div>
+  <p>差は870円。月10件なら、月額の分110円を引いて<b>郵便が760円安い</b>、となります。</p>
+  <p class="small-note">※表の金額は端数処理（円未満）の違いで、手計算と1円ずれることがあります。</p>
+
+  <details class="more">
+    <summary>くわしい表：100gきざみ（〜2kg）、国ごとの総額</summary>
+    <p class="small-note">単位は円。郵便は、月の発送件数ごとに「Ship&amp;co月額1,100円÷件数」を足した1件あたりの総額です。</p>
+    <details class="sub"><summary>イタリア</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,274</td><td>3,504</td><td>2,771</td><td>2,624</td><td>2,514</td><td>2,441</td></tr><tr><th>200g</th><td>3,645</td><td>3,684</td><td>2,951</td><td>2,804</td><td>2,694</td><td>2,621</td></tr><tr><th>300g</th><td>3,795</td><td>3,864</td><td>3,131</td><td>2,984</td><td>2,874</td><td>2,801</td></tr><tr><th>400g</th><td>4,242</td><td>4,044</td><td>3,311</td><td>3,164</td><td>3,054</td><td>2,981</td></tr><tr><th>500g</th><td>4,541</td><td>4,224</td><td>3,491</td><td>3,344</td><td>3,234</td><td>3,161</td></tr><tr><th>600g</th><td>4,692</td><td>4,404</td><td>3,671</td><td>3,524</td><td>3,414</td><td>3,341</td></tr><tr><th>700g</th><td>5,138</td><td>4,584</td><td>3,851</td><td>3,704</td><td>3,594</td><td>3,521</td></tr><tr><th>800g</th><td>5,287</td><td>4,764</td><td>4,031</td><td>3,884</td><td>3,774</td><td>3,701</td></tr><tr><th>900g</th><td>5,589</td><td>4,944</td><td>4,211</td><td>4,064</td><td>3,954</td><td>3,881</td></tr><tr><th>1000g</th><td>6,034</td><td>5,124</td><td>4,391</td><td>4,244</td><td>4,134</td><td>4,061</td></tr><tr><th>1100g</th><td>6,184</td><td>5,304</td><td>4,571</td><td>4,424</td><td>4,314</td><td>4,241</td></tr><tr><th>1200g</th><td>6,485</td><td>5,484</td><td>4,751</td><td>4,604</td><td>4,494</td><td>4,421</td></tr><tr><th>1300g</th><td>6,635</td><td>5,664</td><td>4,931</td><td>4,784</td><td>4,674</td><td>4,601</td></tr><tr><th>1400g</th><td>6,635</td><td>5,844</td><td>5,111</td><td>4,964</td><td>4,854</td><td>4,781</td></tr><tr><th>1500g</th><td>6,635</td><td>6,024</td><td>5,291</td><td>5,144</td><td>5,034</td><td>4,961</td></tr><tr><th>1600g</th><td>8,411</td><td>6,204</td><td>5,471</td><td>5,324</td><td>5,214</td><td>5,141</td></tr><tr><th>1700g</th><td>8,411</td><td>6,384</td><td>5,651</td><td>5,504</td><td>5,394</td><td>5,321</td></tr><tr><th>1800g</th><td>8,411</td><td>6,564</td><td>5,831</td><td>5,684</td><td>5,574</td><td>5,501</td></tr><tr><th>1900g</th><td>9,250</td><td>6,744</td><td>6,011</td><td>5,864</td><td>5,754</td><td>5,681</td></tr><tr><th>2000g</th><td>9,250</td><td>6,924</td><td>6,191</td><td>6,044</td><td>5,934</td><td>5,861</td></tr></tbody></table></div></details><details class="sub"><summary>エストニア</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,683</td><td>3,493</td><td>2,760</td><td>2,613</td><td>2,503</td><td>2,430</td></tr><tr><th>200g</th><td>4,142</td><td>3,673</td><td>2,940</td><td>2,793</td><td>2,683</td><td>2,610</td></tr><tr><th>300g</th><td>4,293</td><td>3,853</td><td>3,120</td><td>2,973</td><td>2,863</td><td>2,790</td></tr><tr><th>400g</th><td>4,923</td><td>4,033</td><td>3,300</td><td>3,153</td><td>3,043</td><td>2,970</td></tr><tr><th>500g</th><td>5,223</td><td>4,213</td><td>3,480</td><td>3,333</td><td>3,223</td><td>3,150</td></tr><tr><th>600g</th><td>5,373</td><td>4,393</td><td>3,660</td><td>3,513</td><td>3,403</td><td>3,330</td></tr><tr><th>700g</th><td>6,002</td><td>4,573</td><td>3,840</td><td>3,693</td><td>3,583</td><td>3,510</td></tr><tr><th>800g</th><td>6,151</td><td>4,753</td><td>4,020</td><td>3,873</td><td>3,763</td><td>3,690</td></tr><tr><th>900g</th><td>6,451</td><td>4,933</td><td>4,200</td><td>4,053</td><td>3,943</td><td>3,870</td></tr><tr><th>1000g</th><td>7,077</td><td>5,113</td><td>4,380</td><td>4,233</td><td>4,123</td><td>4,050</td></tr><tr><th>1100g</th><td>7,226</td><td>5,293</td><td>4,560</td><td>4,413</td><td>4,303</td><td>4,230</td></tr><tr><th>1200g</th><td>7,528</td><td>5,473</td><td>4,740</td><td>4,593</td><td>4,483</td><td>4,410</td></tr><tr><th>1300g</th><td>7,677</td><td>5,653</td><td>4,920</td><td>4,773</td><td>4,663</td><td>4,590</td></tr><tr><th>1400g</th><td>7,677</td><td>5,833</td><td>5,100</td><td>4,953</td><td>4,843</td><td>4,770</td></tr><tr><th>1500g</th><td>7,677</td><td>6,013</td><td>5,280</td><td>5,133</td><td>5,023</td><td>4,950</td></tr><tr><th>1600g</th><td>9,661</td><td>6,193</td><td>5,460</td><td>5,313</td><td>5,203</td><td>5,130</td></tr><tr><th>1700g</th><td>9,661</td><td>6,373</td><td>5,640</td><td>5,493</td><td>5,383</td><td>5,310</td></tr><tr><th>1800g</th><td>9,661</td><td>6,553</td><td>5,820</td><td>5,673</td><td>5,563</td><td>5,490</td></tr><tr><th>1900g</th><td>10,499</td><td>6,733</td><td>6,000</td><td>5,853</td><td>5,743</td><td>5,670</td></tr><tr><th>2000g</th><td>10,499</td><td>6,913</td><td>6,180</td><td>6,033</td><td>5,923</td><td>5,850</td></tr></tbody></table></div></details><details class="sub"><summary>オランダ</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,398</td><td>3,504</td><td>2,771</td><td>2,624</td><td>2,514</td><td>2,441</td></tr><tr><th>200g</th><td>3,700</td><td>3,684</td><td>2,951</td><td>2,804</td><td>2,694</td><td>2,621</td></tr><tr><th>300g</th><td>3,851</td><td>3,864</td><td>3,131</td><td>2,984</td><td>2,874</td><td>2,801</td></tr><tr><th>400g</th><td>4,154</td><td>4,044</td><td>3,311</td><td>3,164</td><td>3,054</td><td>2,981</td></tr><tr><th>500g</th><td>4,453</td><td>4,224</td><td>3,491</td><td>3,344</td><td>3,234</td><td>3,161</td></tr><tr><th>600g</th><td>4,603</td><td>4,404</td><td>3,671</td><td>3,524</td><td>3,414</td><td>3,341</td></tr><tr><th>700g</th><td>4,907</td><td>4,584</td><td>3,851</td><td>3,704</td><td>3,594</td><td>3,521</td></tr><tr><th>800g</th><td>5,056</td><td>4,764</td><td>4,031</td><td>3,884</td><td>3,774</td><td>3,701</td></tr><tr><th>900g</th><td>5,356</td><td>4,944</td><td>4,211</td><td>4,064</td><td>3,954</td><td>3,881</td></tr><tr><th>1000g</th><td>5,667</td><td>5,124</td><td>4,391</td><td>4,244</td><td>4,134</td><td>4,061</td></tr><tr><th>1100g</th><td>5,816</td><td>5,304</td><td>4,571</td><td>4,424</td><td>4,314</td><td>4,241</td></tr><tr><th>1200g</th><td>6,117</td><td>5,484</td><td>4,751</td><td>4,604</td><td>4,494</td><td>4,421</td></tr><tr><th>1300g</th><td>6,267</td><td>5,664</td><td>4,931</td><td>4,784</td><td>4,674</td><td>4,601</td></tr><tr><th>1400g</th><td>6,267</td><td>5,844</td><td>5,111</td><td>4,964</td><td>4,854</td><td>4,781</td></tr><tr><th>1500g</th><td>6,267</td><td>6,024</td><td>5,291</td><td>5,144</td><td>5,034</td><td>4,961</td></tr><tr><th>1600g</th><td>7,677</td><td>6,204</td><td>5,471</td><td>5,324</td><td>5,214</td><td>5,141</td></tr><tr><th>1700g</th><td>7,677</td><td>6,384</td><td>5,651</td><td>5,504</td><td>5,394</td><td>5,321</td></tr><tr><th>1800g</th><td>7,677</td><td>6,564</td><td>5,831</td><td>5,684</td><td>5,574</td><td>5,501</td></tr><tr><th>1900g</th><td>8,516</td><td>6,744</td><td>6,011</td><td>5,864</td><td>5,754</td><td>5,681</td></tr><tr><th>2000g</th><td>8,516</td><td>6,924</td><td>6,191</td><td>6,044</td><td>5,934</td><td>5,861</td></tr></tbody></table></div></details><details class="sub"><summary>スウェーデン</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>2,852</td><td>3,484</td><td>2,751</td><td>2,604</td><td>2,494</td><td>2,421</td></tr><tr><th>200g</th><td>3,151</td><td>3,664</td><td>2,931</td><td>2,784</td><td>2,674</td><td>2,601</td></tr><tr><th>300g</th><td>3,301</td><td>3,844</td><td>3,111</td><td>2,964</td><td>2,854</td><td>2,781</td></tr><tr><th>400g</th><td>3,602</td><td>4,024</td><td>3,291</td><td>3,144</td><td>3,034</td><td>2,961</td></tr><tr><th>500g</th><td>3,902</td><td>4,204</td><td>3,471</td><td>3,324</td><td>3,214</td><td>3,141</td></tr><tr><th>600g</th><td>4,050</td><td>4,384</td><td>3,651</td><td>3,504</td><td>3,394</td><td>3,321</td></tr><tr><th>700g</th><td>4,463</td><td>4,564</td><td>3,831</td><td>3,684</td><td>3,574</td><td>3,501</td></tr><tr><th>800g</th><td>4,614</td><td>4,744</td><td>4,011</td><td>3,864</td><td>3,754</td><td>3,681</td></tr><tr><th>900g</th><td>4,911</td><td>4,924</td><td>4,191</td><td>4,044</td><td>3,934</td><td>3,861</td></tr><tr><th>1000g</th><td>5,212</td><td>5,104</td><td>4,371</td><td>4,224</td><td>4,114</td><td>4,041</td></tr><tr><th>1100g</th><td>5,362</td><td>5,284</td><td>4,551</td><td>4,404</td><td>4,294</td><td>4,221</td></tr><tr><th>1200g</th><td>5,661</td><td>5,464</td><td>4,731</td><td>4,584</td><td>4,474</td><td>4,401</td></tr><tr><th>1300g</th><td>5,812</td><td>5,644</td><td>4,911</td><td>4,764</td><td>4,654</td><td>4,581</td></tr><tr><th>1400g</th><td>5,812</td><td>5,824</td><td>5,091</td><td>4,944</td><td>4,834</td><td>4,761</td></tr><tr><th>1500g</th><td>5,812</td><td>6,004</td><td>5,271</td><td>5,124</td><td>5,014</td><td>4,941</td></tr><tr><th>1600g</th><td>7,333</td><td>6,184</td><td>5,451</td><td>5,304</td><td>5,194</td><td>5,121</td></tr><tr><th>1700g</th><td>7,333</td><td>6,364</td><td>5,631</td><td>5,484</td><td>5,374</td><td>5,301</td></tr><tr><th>1800g</th><td>7,333</td><td>6,544</td><td>5,811</td><td>5,664</td><td>5,554</td><td>5,481</td></tr><tr><th>1900g</th><td>8,171</td><td>6,724</td><td>5,991</td><td>5,844</td><td>5,734</td><td>5,661</td></tr><tr><th>2000g</th><td>8,171</td><td>6,904</td><td>6,171</td><td>6,024</td><td>5,914</td><td>5,841</td></tr></tbody></table></div></details><details class="sub"><summary>スペイン</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,040</td><td>3,707</td><td>2,974</td><td>2,827</td><td>2,717</td><td>2,644</td></tr><tr><th>200g</th><td>3,415</td><td>3,887</td><td>3,154</td><td>3,007</td><td>2,897</td><td>2,824</td></tr><tr><th>300g</th><td>3,564</td><td>4,067</td><td>3,334</td><td>3,187</td><td>3,077</td><td>3,004</td></tr><tr><th>400g</th><td>4,011</td><td>4,247</td><td>3,514</td><td>3,367</td><td>3,257</td><td>3,184</td></tr><tr><th>500g</th><td>4,310</td><td>4,427</td><td>3,694</td><td>3,547</td><td>3,437</td><td>3,364</td></tr><tr><th>600g</th><td>4,461</td><td>4,607</td><td>3,874</td><td>3,727</td><td>3,617</td><td>3,544</td></tr><tr><th>700g</th><td>4,903</td><td>4,787</td><td>4,054</td><td>3,907</td><td>3,797</td><td>3,724</td></tr><tr><th>800g</th><td>5,054</td><td>4,967</td><td>4,234</td><td>4,087</td><td>3,977</td><td>3,904</td></tr><tr><th>900g</th><td>5,353</td><td>5,147</td><td>4,414</td><td>4,267</td><td>4,157</td><td>4,084</td></tr><tr><th>1000g</th><td>5,804</td><td>5,327</td><td>4,594</td><td>4,447</td><td>4,337</td><td>4,264</td></tr><tr><th>1100g</th><td>5,953</td><td>5,507</td><td>4,774</td><td>4,627</td><td>4,517</td><td>4,444</td></tr><tr><th>1200g</th><td>6,253</td><td>5,687</td><td>4,954</td><td>4,807</td><td>4,697</td><td>4,624</td></tr><tr><th>1300g</th><td>6,404</td><td>5,867</td><td>5,134</td><td>4,987</td><td>4,877</td><td>4,804</td></tr><tr><th>1400g</th><td>6,404</td><td>6,047</td><td>5,314</td><td>5,167</td><td>5,057</td><td>4,984</td></tr><tr><th>1500g</th><td>6,404</td><td>6,227</td><td>5,494</td><td>5,347</td><td>5,237</td><td>5,164</td></tr><tr><th>1600g</th><td>8,149</td><td>6,407</td><td>5,674</td><td>5,527</td><td>5,417</td><td>5,344</td></tr><tr><th>1700g</th><td>8,149</td><td>6,587</td><td>5,854</td><td>5,707</td><td>5,597</td><td>5,524</td></tr><tr><th>1800g</th><td>8,149</td><td>6,767</td><td>6,034</td><td>5,887</td><td>5,777</td><td>5,704</td></tr><tr><th>1900g</th><td>8,986</td><td>6,947</td><td>6,214</td><td>6,067</td><td>5,957</td><td>5,884</td></tr><tr><th>2000g</th><td>8,986</td><td>7,127</td><td>6,394</td><td>6,247</td><td>6,137</td><td>6,064</td></tr></tbody></table></div></details><details class="sub"><summary>スロバキア</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,462</td><td>3,504</td><td>2,771</td><td>2,624</td><td>2,514</td><td>2,441</td></tr><tr><th>200g</th><td>3,868</td><td>3,684</td><td>2,951</td><td>2,804</td><td>2,694</td><td>2,621</td></tr><tr><th>300g</th><td>4,018</td><td>3,864</td><td>3,131</td><td>2,984</td><td>2,874</td><td>2,801</td></tr><tr><th>400g</th><td>4,534</td><td>4,044</td><td>3,311</td><td>3,164</td><td>3,054</td><td>2,981</td></tr><tr><th>500g</th><td>4,834</td><td>4,224</td><td>3,491</td><td>3,344</td><td>3,234</td><td>3,161</td></tr><tr><th>600g</th><td>4,985</td><td>4,404</td><td>3,671</td><td>3,524</td><td>3,414</td><td>3,341</td></tr><tr><th>700g</th><td>5,501</td><td>4,584</td><td>3,851</td><td>3,704</td><td>3,594</td><td>3,521</td></tr><tr><th>800g</th><td>5,651</td><td>4,764</td><td>4,031</td><td>3,884</td><td>3,774</td><td>3,701</td></tr><tr><th>900g</th><td>5,950</td><td>4,944</td><td>4,211</td><td>4,064</td><td>3,954</td><td>3,881</td></tr><tr><th>1000g</th><td>6,464</td><td>5,124</td><td>4,391</td><td>4,244</td><td>4,134</td><td>4,061</td></tr><tr><th>1100g</th><td>6,613</td><td>5,304</td><td>4,571</td><td>4,424</td><td>4,314</td><td>4,241</td></tr><tr><th>1200g</th><td>6,915</td><td>5,484</td><td>4,751</td><td>4,604</td><td>4,494</td><td>4,421</td></tr><tr><th>1300g</th><td>7,064</td><td>5,664</td><td>4,931</td><td>4,784</td><td>4,674</td><td>4,601</td></tr><tr><th>1400g</th><td>7,064</td><td>5,844</td><td>5,111</td><td>4,964</td><td>4,854</td><td>4,781</td></tr><tr><th>1500g</th><td>7,064</td><td>6,024</td><td>5,291</td><td>5,144</td><td>5,034</td><td>4,961</td></tr><tr><th>1600g</th><td>8,941</td><td>6,204</td><td>5,471</td><td>5,324</td><td>5,214</td><td>5,141</td></tr><tr><th>1700g</th><td>8,941</td><td>6,384</td><td>5,651</td><td>5,504</td><td>5,394</td><td>5,321</td></tr><tr><th>1800g</th><td>8,941</td><td>6,564</td><td>5,831</td><td>5,684</td><td>5,574</td><td>5,501</td></tr><tr><th>1900g</th><td>9,781</td><td>6,744</td><td>6,011</td><td>5,864</td><td>5,754</td><td>5,681</td></tr><tr><th>2000g</th><td>9,781</td><td>6,924</td><td>6,191</td><td>6,044</td><td>5,934</td><td>5,861</td></tr></tbody></table></div></details><details class="sub"><summary>デンマーク</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,514</td><td>3,572</td><td>2,839</td><td>2,692</td><td>2,582</td><td>2,509</td></tr><tr><th>200g</th><td>3,820</td><td>3,752</td><td>3,019</td><td>2,872</td><td>2,762</td><td>2,689</td></tr><tr><th>300g</th><td>3,972</td><td>3,932</td><td>3,199</td><td>3,052</td><td>2,942</td><td>2,869</td></tr><tr><th>400g</th><td>4,273</td><td>4,112</td><td>3,379</td><td>3,232</td><td>3,122</td><td>3,049</td></tr><tr><th>500g</th><td>4,573</td><td>4,292</td><td>3,559</td><td>3,412</td><td>3,302</td><td>3,229</td></tr><tr><th>600g</th><td>4,723</td><td>4,472</td><td>3,739</td><td>3,592</td><td>3,482</td><td>3,409</td></tr><tr><th>700g</th><td>5,028</td><td>4,652</td><td>3,919</td><td>3,772</td><td>3,662</td><td>3,589</td></tr><tr><th>800g</th><td>5,177</td><td>4,832</td><td>4,099</td><td>3,952</td><td>3,842</td><td>3,769</td></tr><tr><th>900g</th><td>5,477</td><td>5,012</td><td>4,279</td><td>4,132</td><td>4,022</td><td>3,949</td></tr><tr><th>1000g</th><td>5,782</td><td>5,192</td><td>4,459</td><td>4,312</td><td>4,202</td><td>4,129</td></tr><tr><th>1100g</th><td>5,931</td><td>5,372</td><td>4,639</td><td>4,492</td><td>4,382</td><td>4,309</td></tr><tr><th>1200g</th><td>6,233</td><td>5,552</td><td>4,819</td><td>4,672</td><td>4,562</td><td>4,489</td></tr><tr><th>1300g</th><td>6,382</td><td>5,732</td><td>4,999</td><td>4,852</td><td>4,742</td><td>4,669</td></tr><tr><th>1400g</th><td>6,382</td><td>5,912</td><td>5,179</td><td>5,032</td><td>4,922</td><td>4,849</td></tr><tr><th>1500g</th><td>6,382</td><td>6,092</td><td>5,359</td><td>5,212</td><td>5,102</td><td>5,029</td></tr><tr><th>1600g</th><td>7,814</td><td>6,272</td><td>5,539</td><td>5,392</td><td>5,282</td><td>5,209</td></tr><tr><th>1700g</th><td>7,814</td><td>6,452</td><td>5,719</td><td>5,572</td><td>5,462</td><td>5,389</td></tr><tr><th>1800g</th><td>7,814</td><td>6,632</td><td>5,899</td><td>5,752</td><td>5,642</td><td>5,569</td></tr><tr><th>1900g</th><td>8,651</td><td>6,812</td><td>6,079</td><td>5,932</td><td>5,822</td><td>5,749</td></tr><tr><th>2000g</th><td>8,651</td><td>6,992</td><td>6,259</td><td>6,112</td><td>6,002</td><td>5,929</td></tr></tbody></table></div></details><details class="sub"><summary>フィンランド</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>4,418</td><td>3,300</td><td>2,567</td><td>2,420</td><td>2,310</td><td>2,237</td></tr><tr><th>200g</th><td>4,722</td><td>3,480</td><td>2,747</td><td>2,600</td><td>2,490</td><td>2,417</td></tr><tr><th>300g</th><td>4,872</td><td>3,660</td><td>2,927</td><td>2,780</td><td>2,670</td><td>2,597</td></tr><tr><th>400g</th><td>5,174</td><td>3,840</td><td>3,107</td><td>2,960</td><td>2,850</td><td>2,777</td></tr><tr><th>500g</th><td>5,474</td><td>4,020</td><td>3,287</td><td>3,140</td><td>3,030</td><td>2,957</td></tr><tr><th>600g</th><td>5,624</td><td>4,200</td><td>3,467</td><td>3,320</td><td>3,210</td><td>3,137</td></tr><tr><th>700g</th><td>5,928</td><td>4,380</td><td>3,647</td><td>3,500</td><td>3,390</td><td>3,317</td></tr><tr><th>800g</th><td>6,078</td><td>4,560</td><td>3,827</td><td>3,680</td><td>3,570</td><td>3,497</td></tr><tr><th>900g</th><td>6,379</td><td>4,740</td><td>4,007</td><td>3,860</td><td>3,750</td><td>3,677</td></tr><tr><th>1000g</th><td>6,680</td><td>4,920</td><td>4,187</td><td>4,040</td><td>3,930</td><td>3,857</td></tr><tr><th>1100g</th><td>6,830</td><td>5,100</td><td>4,367</td><td>4,220</td><td>4,110</td><td>4,037</td></tr><tr><th>1200g</th><td>7,130</td><td>5,280</td><td>4,547</td><td>4,400</td><td>4,290</td><td>4,217</td></tr><tr><th>1300g</th><td>7,280</td><td>5,460</td><td>4,727</td><td>4,580</td><td>4,470</td><td>4,397</td></tr><tr><th>1400g</th><td>7,280</td><td>5,640</td><td>4,907</td><td>4,760</td><td>4,650</td><td>4,577</td></tr><tr><th>1500g</th><td>7,280</td><td>5,820</td><td>5,087</td><td>4,940</td><td>4,830</td><td>4,757</td></tr><tr><th>1600g</th><td>9,063</td><td>6,000</td><td>5,267</td><td>5,120</td><td>5,010</td><td>4,937</td></tr><tr><th>1700g</th><td>9,063</td><td>6,180</td><td>5,447</td><td>5,300</td><td>5,190</td><td>5,117</td></tr><tr><th>1800g</th><td>9,063</td><td>6,360</td><td>5,627</td><td>5,480</td><td>5,370</td><td>5,297</td></tr><tr><th>1900g</th><td>9,901</td><td>6,540</td><td>5,807</td><td>5,660</td><td>5,550</td><td>5,477</td></tr><tr><th>2000g</th><td>9,901</td><td>6,720</td><td>5,987</td><td>5,840</td><td>5,730</td><td>5,657</td></tr></tbody></table></div></details><details class="sub"><summary>フランス</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,236</td><td>3,504</td><td>2,771</td><td>2,624</td><td>2,514</td><td>2,441</td></tr><tr><th>200g</th><td>3,638</td><td>3,684</td><td>2,951</td><td>2,804</td><td>2,694</td><td>2,621</td></tr><tr><th>300g</th><td>3,790</td><td>3,864</td><td>3,131</td><td>2,984</td><td>2,874</td><td>2,801</td></tr><tr><th>400g</th><td>4,353</td><td>4,044</td><td>3,311</td><td>3,164</td><td>3,054</td><td>2,981</td></tr><tr><th>500g</th><td>4,654</td><td>4,224</td><td>3,491</td><td>3,344</td><td>3,234</td><td>3,161</td></tr><tr><th>600g</th><td>4,803</td><td>4,404</td><td>3,671</td><td>3,524</td><td>3,414</td><td>3,341</td></tr><tr><th>700g</th><td>5,375</td><td>4,584</td><td>3,851</td><td>3,704</td><td>3,594</td><td>3,521</td></tr><tr><th>800g</th><td>5,526</td><td>4,764</td><td>4,031</td><td>3,884</td><td>3,774</td><td>3,701</td></tr><tr><th>900g</th><td>5,826</td><td>4,944</td><td>4,211</td><td>4,064</td><td>3,954</td><td>3,881</td></tr><tr><th>1000g</th><td>6,226</td><td>5,124</td><td>4,391</td><td>4,244</td><td>4,134</td><td>4,061</td></tr><tr><th>1100g</th><td>6,377</td><td>5,304</td><td>4,571</td><td>4,424</td><td>4,314</td><td>4,241</td></tr><tr><th>1200g</th><td>6,677</td><td>5,484</td><td>4,751</td><td>4,604</td><td>4,494</td><td>4,421</td></tr><tr><th>1300g</th><td>6,827</td><td>5,664</td><td>4,931</td><td>4,784</td><td>4,674</td><td>4,601</td></tr><tr><th>1400g</th><td>6,827</td><td>5,844</td><td>5,111</td><td>4,964</td><td>4,854</td><td>4,781</td></tr><tr><th>1500g</th><td>6,827</td><td>6,024</td><td>5,291</td><td>5,144</td><td>5,034</td><td>4,961</td></tr><tr><th>1600g</th><td>8,668</td><td>6,204</td><td>5,471</td><td>5,324</td><td>5,214</td><td>5,141</td></tr><tr><th>1700g</th><td>8,668</td><td>6,384</td><td>5,651</td><td>5,504</td><td>5,394</td><td>5,321</td></tr><tr><th>1800g</th><td>8,668</td><td>6,564</td><td>5,831</td><td>5,684</td><td>5,574</td><td>5,501</td></tr><tr><th>1900g</th><td>9,505</td><td>6,744</td><td>6,011</td><td>5,864</td><td>5,754</td><td>5,681</td></tr><tr><th>2000g</th><td>9,505</td><td>6,924</td><td>6,191</td><td>6,044</td><td>5,934</td><td>5,861</td></tr></tbody></table></div></details><details class="sub"><summary>マルタ</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>4,446</td><td>3,504</td><td>2,771</td><td>2,624</td><td>2,514</td><td>2,441</td></tr><tr><th>200g</th><td>5,094</td><td>3,684</td><td>2,951</td><td>2,804</td><td>2,694</td><td>2,621</td></tr><tr><th>300g</th><td>5,245</td><td>3,864</td><td>3,131</td><td>2,984</td><td>2,874</td><td>2,801</td></tr><tr><th>400g</th><td>6,233</td><td>4,044</td><td>3,311</td><td>3,164</td><td>3,054</td><td>2,981</td></tr><tr><th>500g</th><td>6,532</td><td>4,224</td><td>3,491</td><td>3,344</td><td>3,234</td><td>3,161</td></tr><tr><th>600g</th><td>6,684</td><td>4,404</td><td>3,671</td><td>3,524</td><td>3,414</td><td>3,341</td></tr><tr><th>700g</th><td>7,678</td><td>4,584</td><td>3,851</td><td>3,704</td><td>3,594</td><td>3,521</td></tr><tr><th>800g</th><td>7,827</td><td>4,764</td><td>4,031</td><td>3,884</td><td>3,774</td><td>3,701</td></tr><tr><th>900g</th><td>8,128</td><td>4,944</td><td>4,211</td><td>4,064</td><td>3,954</td><td>3,881</td></tr><tr><th>1000g</th><td>9,119</td><td>5,124</td><td>4,391</td><td>4,244</td><td>4,134</td><td>4,061</td></tr><tr><th>1100g</th><td>9,269</td><td>5,304</td><td>4,571</td><td>4,424</td><td>4,314</td><td>4,241</td></tr><tr><th>1200g</th><td>9,569</td><td>5,484</td><td>4,751</td><td>4,604</td><td>4,494</td><td>4,421</td></tr><tr><th>1300g</th><td>9,720</td><td>5,664</td><td>4,931</td><td>4,784</td><td>4,674</td><td>4,601</td></tr><tr><th>1400g</th><td>9,720</td><td>5,844</td><td>5,111</td><td>4,964</td><td>4,854</td><td>4,781</td></tr><tr><th>1500g</th><td>9,720</td><td>6,024</td><td>5,291</td><td>5,144</td><td>5,034</td><td>4,961</td></tr><tr><th>1600g</th><td>13,078</td><td>6,204</td><td>5,471</td><td>5,324</td><td>5,214</td><td>5,141</td></tr><tr><th>1700g</th><td>13,078</td><td>6,384</td><td>5,651</td><td>5,504</td><td>5,394</td><td>5,321</td></tr><tr><th>1800g</th><td>13,078</td><td>6,564</td><td>5,831</td><td>5,684</td><td>5,574</td><td>5,501</td></tr><tr><th>1900g</th><td>13,916</td><td>6,744</td><td>6,011</td><td>5,864</td><td>5,754</td><td>5,681</td></tr><tr><th>2000g</th><td>13,916</td><td>6,924</td><td>6,191</td><td>6,044</td><td>5,934</td><td>5,861</td></tr></tbody></table></div></details><details class="sub"><summary>ルクセンブルク</summary><div class="table-wrap"><table class="data full"><thead><tr><th>重さ</th><th>SpeedPAK<br>総額</th><th>郵便 1件/月</th><th>3件</th><th>5件</th><th>10件</th><th>30件</th></tr></thead><tbody><tr><th>100g</th><td>3,254</td><td>4,318</td><td>3,585</td><td>3,438</td><td>3,328</td><td>3,255</td></tr><tr><th>200g</th><td>3,571</td><td>4,498</td><td>3,765</td><td>3,618</td><td>3,508</td><td>3,435</td></tr><tr><th>300g</th><td>3,720</td><td>4,678</td><td>3,945</td><td>3,798</td><td>3,688</td><td>3,615</td></tr><tr><th>400g</th><td>4,073</td><td>4,858</td><td>4,125</td><td>3,978</td><td>3,868</td><td>3,795</td></tr><tr><th>500g</th><td>4,373</td><td>5,038</td><td>4,305</td><td>4,158</td><td>4,048</td><td>3,975</td></tr><tr><th>600g</th><td>4,520</td><td>5,218</td><td>4,485</td><td>4,338</td><td>4,228</td><td>4,155</td></tr><tr><th>700g</th><td>4,872</td><td>5,398</td><td>4,665</td><td>4,518</td><td>4,408</td><td>4,335</td></tr><tr><th>800g</th><td>5,022</td><td>5,578</td><td>4,845</td><td>4,698</td><td>4,588</td><td>4,515</td></tr><tr><th>900g</th><td>5,321</td><td>5,758</td><td>5,025</td><td>4,878</td><td>4,768</td><td>4,695</td></tr><tr><th>1000g</th><td>5,651</td><td>5,938</td><td>5,205</td><td>5,058</td><td>4,948</td><td>4,875</td></tr><tr><th>1100g</th><td>5,802</td><td>6,118</td><td>5,385</td><td>5,238</td><td>5,128</td><td>5,055</td></tr><tr><th>1200g</th><td>6,102</td><td>6,298</td><td>5,565</td><td>5,418</td><td>5,308</td><td>5,235</td></tr><tr><th>1300g</th><td>6,251</td><td>6,478</td><td>5,745</td><td>5,598</td><td>5,488</td><td>5,415</td></tr><tr><th>1400g</th><td>6,251</td><td>6,658</td><td>5,925</td><td>5,778</td><td>5,668</td><td>5,595</td></tr><tr><th>1500g</th><td>6,251</td><td>6,838</td><td>6,105</td><td>5,958</td><td>5,848</td><td>5,775</td></tr><tr><th>1600g</th><td>7,750</td><td>7,018</td><td>6,285</td><td>6,138</td><td>6,028</td><td>5,955</td></tr><tr><th>1700g</th><td>7,750</td><td>7,198</td><td>6,465</td><td>6,318</td><td>6,208</td><td>6,135</td></tr><tr><th>1800g</th><td>7,750</td><td>7,378</td><td>6,645</td><td>6,498</td><td>6,388</td><td>6,315</td></tr><tr><th>1900g</th><td>8,587</td><td>7,558</td><td>6,825</td><td>6,678</td><td>6,568</td><td>6,495</td></tr><tr><th>2000g</th><td>8,587</td><td>7,738</td><td>7,005</td><td>6,858</td><td>6,748</td><td>6,675</td></tr></tbody></table></div></details>
+  </details>
+</section>
+
+<section class="card" id="irete">
+  <h2>計算に入れたもの</h2>
+  <div class="table-wrap"><table class="data wrap"><thead><tr><th>SpeedPAK Economy</th><th>郵便（国際エアパケット）</th></tr></thead><tbody>
+    <tr><td>基本運賃（公式料金表、2026-10-23発効）</td><td>国際エアパケット（第3地帯、国際特定記録370円込み、2kgまで、3辺合計90cm・最長60cmまで）</td></tr>
+    <tr><td>燃油サーチャージ15%（2026-11-01から。2週間ごとに見直し）</td><td>関税 3ユーロ＝555円／品目</td></tr>
+    <tr><td>混雑時割増金 34円／件</td><td>EU取扱手数料 2ユーロ＝370円／品目</td></tr>
+    <tr><td>関税 3ユーロ＝555円／品目</td><td>PDDP追加料金（国ごと）：フィンランド0、スウェーデン10クローナ、エストニア0.95ユーロ、イタリア・フランス・オランダ・スロバキア・マルタ1ユーロ、デンマーク10クローネ、スペイン2ユーロ、ルクセンブルク5ユーロ</td></tr>
+    <tr><td>EU取扱手数料 2ユーロ＝370円／品目</td><td>Zonos通関手数料 1.69ドル＋（関税＋EU取扱手数料＋PDDP追加料金）の10%</td></tr>
+    <tr><td>通関処理手数料（関税＋手数料の2.1%）</td><td>Ship&amp;co 1枚22円＋月額1,100円（月1〜50枚のプラン。Ship&amp;co公式の料金ページで確認）</td></tr>
+  </tbody></table></div>
+  <p class="small-note">為替：1ユーロ＝185円（Orange Connexの参考値）、1ドル＝約166円（Zonosの 2ユーロ＝2.23ドル から）。</p>
+</section>
+
+<details class="more" id="chui">
+  <summary>注意点（くわしく）</summary>
+  <ul>
+    <li>SpeedPAKの容積重量は「縦×横×高さ(cm)÷8,000」。大きくて軽い荷物は、重さより容積で料金が決まります。</li>
+    <li>エアパケットは2kgまで、3辺合計90cm以内・最長60cm以内です。</li>
+    <li>混雑時割増金の期間は、2026年分はまだ発表されていません。表には入れています。</li>
+    <li>Zonosの10%の対象を「関税＋EU取扱手数料＋PDDP追加料金」としたのは、筆者の仮定です。筆者のイタリア宛て実際の請求（1.69ドル＋（関税＋PDDP追加料金）の10%）とぴったり一致しました。11月1日以降もEU取扱手数料が対象になるかは未確定で、対象外なら郵便は約37円安くなります。</li>
+    <li>150ユーロを超える注文は別のルールです（SpeedPAK Expeditedなど）。この表は150ユーロ以下だけです。</li>
+    <li>2027年2月1日に日本郵便の料金が改定されます。エアパケットは100gが880円→1,190円、2kgが4,300円→4,800円。この表は現行料金です。</li>
+    <li>燃油サーチャージは2週間ごとに変わります。</li>
+    <li>最終の金額は、それぞれの請求書で確認してください。</li>
+  </ul>
+</details>
+
+<section class="memo">
+  <h2>📝 ことばメモ</h2>
+  <ul>
+    <li><b>DDP</b>：関税や手数料を、売り手側が先に払って送る方法。買い手は届いたとき何も払いません。</li>
+    <li><b>DAP</b>：関税などを、届いたとき買い手が払う方法（受取人払い）。</li>
+    <li><b>PID</b>：商品を識別するコード。2026年11月1日からEU宛てで必要です。</li>
+    <li><b>PDDP追加料金</b>：関税込みで送るために、国ごとにかかる追加の料金。</li>
+    <li><b>EU取扱手数料</b>：EU宛ての荷物1品目ごとにかかる手数料（2ユーロ）。</li>
+    <li><b>IOSS</b>：EUに、150ユーロ以下の荷物の消費税をまとめて納める仕組み。</li>
+    <li><b>Zonos</b>：関税込み発送の手続きを代行する会社のサービス。</li>
+    <li><b>Ship&amp;co</b>：送り状（ラベル）を作るサービス。</li>
+    <li><b>CPaSS</b>：eBayのSpeedPAKを申し込む画面。</li>
+    <li><b>SpeedPAK Economy</b>：eBayの、安いほうの国際配送サービス。</li>
+    <li><b>国際特定記録</b>：日本郵便の追跡つきオプション（370円）。エアパケットの料金に込みです。</li>
+    <li><b>混雑時割増金</b>：混み合う時期にSpeedPAKでかかる、1件34円の追加料金。</li>
+    <li><b>燃油サーチャージ</b>：燃料代の変動にあわせて、SpeedPAKの基本運賃にかかる割増（2026年11月1日から15%）。</li>
+    <li><b>国際エアパケット</b>：日本郵便の、小さな荷物向け航空便。</li>
+  </ul>
+</section>
+
+<section class="card" id="syutten">
+  <h2>出典</h2>
+  <ul class="links">
+    <li>日本郵便 国際エアパケット料金：<a href="https://www.post.japanpost.jp/service/send/oversea/list/delivery/airpacket.html" target="_blank" rel="noopener">https://www.post.japanpost.jp/service/send/oversea/list/delivery/airpacket.html</a></li>
+    <li>日本郵便 続報4（2026-10-01）：<a href="https://www.post.japanpost.jp/service/send/oversea/information/2026/1001_01.html" target="_blank" rel="noopener">https://www.post.japanpost.jp/service/send/oversea/information/2026/1001_01.html</a></li>
+    <li>日本郵便 2027年の料金改定：<a href="https://www.post.japanpost.jp/service/send/oversea/information/fee_revision_2027/" target="_blank" rel="noopener">https://www.post.japanpost.jp/service/send/oversea/information/fee_revision_2027/</a></li>
+    <li>eBay SpeedPAK Economy 料金表（Orange Connex、発効2026-10-23）</li>
+    <li>Orange Connex「Economyサービス 燃油サーチャージ（燃料割増金）改定のお知らせ 2026年11月1日 発効」（2026-10-28）：2026-10-01から14.5%、2026-11-01 0:00（日本時間）から15%</li>
+    <li>Orange Connex「PID・EU取扱手数料」解説資料（2026-10-22時点）</li>
+    <li>eBay「EU取扱手数料(UHF)導入のお知らせ」（150ユーロ以下はDDP必須）</li>
+    <li>Zonos APIの見積もり（筆者実測、2026-10-29）と、筆者のイタリア宛て実際の請求（2026-10-21発送）</li>
+    <li>Ship&amp;co 料金ページ：<a href="https://www.shipandco.com/ja/pricing/" target="_blank" rel="noopener">https://www.shipandco.com/ja/pricing/</a> ／ Ship&amp;coサポートの回答（PIDはZonos経由で送信）</li>
+  </ul>
+  <h3>あわせて読む</h3>
+  <ul class="links">
+    <li><a href="https://naokijodan.github.io/ebay-eu-game-shipping-guide/" target="_blank" rel="noopener">エコノミー発送の送り方ガイド（アメリカ・EU）</a>（訂正あり。このページの冒頭を見てください）</li>
+    <li><a href="https://naokijodan.github.io/ebay-economy-shipping-guide/" target="_blank" rel="noopener">エコノミー発送まるわかりガイド</a></li>
+  </ul>
+</section>
+</main>
+<footer><p class="center">公開日 2026-10-29</p></footer>
+<script>
+(function(){
+  var bs=document.querySelectorAll('#btns button'),cells=document.querySelectorAll('#cmp td[data-d]');
+  function fmt(v){return String(v).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+  function set(n){
+    var share=Math.round(1100/n);
+    for(var i=0;i<cells.length;i++){
+      var v=parseInt(cells[i].getAttribute('data-d'),10)-share,c=cells[i];
+      if(v>0){c.className='g';c.innerHTML='<span class="amt">'+fmt(v)+'円</span><span class="lb">郵便が安い</span>';}
+      else if(v<0){c.className='o';c.innerHTML='<span class="amt">'+fmt(-v)+'円</span><span class="lb">SpeedPAKが安い</span>';}
+      else{c.className='e';c.innerHTML='<span class="amt">0円</span><span class="lb">同じ</span>';}
+    }
+    for(var j=0;j<bs.length;j++){bs[j].className=(bs[j].getAttribute('data-n')==String(n))?'on':'';}
+    document.getElementById('nnote').textContent='いま表示：月'+n+'件（1件あたり月額'+fmt(share)+'円）';
+  }
+  for(var k=0;k<bs.length;k++){bs[k].addEventListener('click',function(){set(parseInt(this.getAttribute('data-n'),10));});}
+})();
+</script>
+</body>
+</html>
