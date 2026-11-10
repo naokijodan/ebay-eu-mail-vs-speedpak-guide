@@ -38,6 +38,25 @@
   p { margin: 10px 0; }
   a { color: var(--accent); }
   .small-note, .source-note { font-size: var(--fs-note); color: var(--muted); margin: 8px 0; }
+  .change-box { background: #fff4d6; color: #222; border: var(--border-w) solid #e09a00; border-left-width: 8px; border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; }
+  .change-box h3 { margin-top: 0; color: #7a4b00; }
+  .change-box p:last-child { margin-bottom: 0; }
+  .change-box ul { margin: 8px 0; padding-left: 1.2em; }
+  .change-box li { margin-bottom: 6px; }
+  .change-box .small-note, .change-box .source-note { color: #555; }
+  .change-box a { color: #1a5fc4; }
+  .chg { display: inline-block; background: #e09a00; color: #fff; font-size: var(--fs-note); font-weight: bold; padding: 1px 8px; border-radius: 999px; margin-left: 6px; white-space: nowrap; }
+  .change-box table.data { background: #fff; font-size: 13px; }
+  .change-box table.data th, .change-box table.data td { color: #222; background: #fff; padding: 6px 4px; white-space: normal; line-height: 1.4; border-bottom: 1px solid #ccc; }
+  .change-box table.data thead th { background: #0b3d91; color: #fff; white-space: normal; }
+  .change-box table.data thead th .small-note { color: #e6eeff; font-size: 11px; margin: 0; }
+  .change-box table.data tbody th { background: #f3f3f3; color: #222; white-space: normal; width: 5.5em; }
+  .change-box table.data td.mk { font-size: 15px; background: #fff; color: #222; }
+  .change-box table.data td.mk.ok { background: #e3f6e8; color: #222; }
+  .change-box table.data td.mk.ng { background: #eee; color: #222; }
+  .add { display: inline-block; background: #0a7f6f; color: #fff; font-size: var(--fs-note); font-weight: bold; padding: 1px 8px; border-radius: 999px; margin-left: 6px; white-space: nowrap; }
+  .start-change { background: #fff4d6; color: #222; border: var(--border-w) solid #e09a00; border-radius: var(--radius-band); padding: 10px 14px; margin: 14px 0 0; font-weight: bold; }
+  .start-change a { color: #1a5fc4; }
   .point-box { background: var(--accent-light); border: var(--border-w) solid var(--accent); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; font-weight: bold; font-size: var(--fs-heading); color: var(--strong); text-align: center; }
   .caution-box { background: var(--wrong-bg); border: var(--border-w) solid var(--wrong-text); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; }
   .ok-box { background: var(--correct-bg); border: var(--border-w) solid var(--correct-text); border-radius: var(--radius-box); padding: var(--pad-roomy); margin: 16px 0; }
@@ -80,6 +99,7 @@
   .goal .gsub { font-size: var(--fs-note); margin: 6px 0 8px; line-height: 1.6; }
   .chips { display: flex; flex-wrap: wrap; gap: 4px 5px; }
   .chip { background: var(--card); border: 1px solid #aaa; border-radius: 999px; padding: 0 8px; font-size: 13px; line-height: 1.7; }
+  .chip.moved { opacity: .75; }
   .p1 .pill { background: var(--accent); } .p1 .goal { background: var(--accent-light); border-color: var(--accent); }
   .p2 .pill { background: var(--gray); } .p2 .goal { background: var(--sub); border-color: var(--gray); }
   .p3 .pill { background: var(--wrong-text); } .p3 .goal { background: var(--wrong-bg); border-color: var(--wrong-text); }
@@ -119,6 +139,8 @@
 </header>
 <main>
 
+<p class="start-change">⚠️ 2026年11月1日から、EUの一部の国の扱いが変わりました（ベルギー・スウェーデン・ドイツ）→ <a href="#change-1101">変更点を見る</a></p>
+
 <section class="card" id="oshirase">
   <div class="caution-box">
     <h3>⚠️ 前の記事の訂正とおわび</h3>
@@ -131,21 +153,42 @@
 
 <section class="card" id="ketsuron">
   <h2>結論の図：どの国は、どう送る？</h2>
+
+  <div class="change-box" id="change-1101">
+    <h3>2026年11月1日からの変更（日本郵便）</h3>
+    <p class="small-note">確認日 2026-11-10</p>
+    <p>この記事の国のグループと、「11か国」「5か国」という数は、10月時点の情報です。11月1日から、次の3つの国の扱いが変わりました。</p>
+    <div class="table-wrap"><table class="data mark"><thead><tr><th>国</th><th>前払い<br><span class="small-note">（変更前→変更後）</span></th><th>受取人払い<br><span class="small-note">（変更前→変更後）</span></th></tr></thead><tbody><tr><th scope="row">ベルギー</th><td class="mk">❌→⭕️</td><td class="mk ng">❌のまま</td></tr><tr><th scope="row">スウェーデン</th><td class="mk ok">⭕️のまま</td><td class="mk">⭕️→❌</td></tr><tr><th scope="row">ドイツ</th><td class="mk ng">❌のまま</td><td class="mk ng">❌のまま</td></tr></tbody></table></div>
+    <ul>
+      <li>ベルギーは、郵便で関税を前払い（Zonos）できるようになりました。前払いOKの国は11か国から12か国に、郵便では送れない国は5か国から4か国になりました。</li>
+      <li>スウェーデンは、受取人払いが❌になりました。この記事は関税込み（前払い）で送る話なので、スウェーデンの扱いは変わりません。</li>
+      <li>ドイツは表の⭕️❌は変わりません。そのうえで、ネット販売（BtoC）の郵便物は差し出せなくなりました（11月4日の条件表）。</li>
+      <li>ベルギーは、下の料金の比較表に入っていません。ベルギーの郵便料金と、Zonosの国別の前払い追加料金は、確認できていません（未確認）。確認できるまでは、ご自分で料金を比べるか、SpeedPAK Economyで送ってください。</li>
+      <li>グアドループ・仏領ギアナ・マルティニーク・レユニオン・モナコも前払い⭕️です。図に「追加」の印を付けて足しました（料金は未確認）。</li>
+    </ul>
+    <p class="source-note">出典：日本郵便 お知らせ（続報5、2026年10月30日）<br>
+      👉 <a href="https://www.post.japanpost.jp/service/send/oversea/information/2026/1030_01.html" target="_blank" rel="noopener">https://www.post.japanpost.jp/service/send/oversea/information/2026/1030_01.html</a><br>
+      出典：日本郵便 お知らせ（条件表、2026年11月4日）<br>
+      👉 <a href="https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_01.html" target="_blank" rel="noopener">https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_01.html</a></p>
+  </div>
   <div class="step"><span>🛒</span><span>EU宛ての注文（150ユーロ以下）</span></div>
   <div class="arrow">▼ 送り先の国は？</div>
   <div class="paths">
-    <div class="path p1"><div class="pill">① 郵便OKの11か国</div><div class="goal">
+    <div class="path p1"><div class="pill">① 郵便OKの<s>11</s>→12か国</div><div class="goal">
       <div class="gicon">⚖️</div><div class="gtitle">Ship&amp;coと契約あり → 郵便とSpeedPAK Economyを比べる</div>
       <p class="gsub">比べるのは、このページの表です。Ship&amp;coがない人は → SpeedPAK Economy</p><p class="gsub">郵便で送るときも、受取人払い（DAP）にはせず、Ship&amp;co（Zonos）で関税込み（DDP）にします。</p>
-      <div class="chips"><span class="chip">イタリア</span><span class="chip">エストニア</span><span class="chip">オランダ</span><span class="chip">スウェーデン</span><span class="chip">スペイン</span><span class="chip">スロバキア</span><span class="chip">デンマーク</span><span class="chip">フィンランド</span><span class="chip">フランス</span><span class="chip">マルタ</span><span class="chip">ルクセンブルク</span></div></div></div>
+      <div class="chips"><span class="chip">イタリア</span><span class="chip">エストニア</span><span class="chip">オランダ</span><span class="chip">スウェーデン<span class="chg">11/1変更</span></span><span class="chip">スペイン</span><span class="chip">スロバキア</span><span class="chip">デンマーク</span><span class="chip">フィンランド</span><span class="chip">フランス</span><span class="chip">マルタ</span><span class="chip">ルクセンブルク</span><span class="chip">ベルギー<span class="chg">11/1変更</span></span><span class="chip">グアドループ<span class="add">追加</span></span><span class="chip">仏領ギアナ<span class="add">追加</span></span><span class="chip">マルティニーク<span class="add">追加</span></span><span class="chip">レユニオン<span class="add">追加</span><span class="chg">11/1変更</span></span><span class="chip">モナコ<span class="add">追加</span></span></div>
+      <p class="gsub">スウェーデンは11/1から受取人払いが❌になりましたが、前払い（関税込み）はこれまでどおり⭕️です。</p>
+      <p class="small-note">追加：グアドループ・仏領ギアナ・マルティニーク・レユニオン（フランスの海外の地域）とモナコも、日本郵便の表で前払い⭕️です。Zonosのアプリの送り先にも出ています。レユニオンは11月1日から⭕️になりました。この5つは下の料金くらべの表に入っていません（料金は未確認）。</p></div></div>
     <div class="path p2"><div class="pill">② 受取人払いだけの11か国</div><div class="goal">
       <div class="gicon">📦</div><div class="gtitle">SpeedPAK Economy</div>
       <p class="gsub">関税込み（DDP）で送れないため</p>
       <div class="chips"><span class="chip">アイルランド</span><span class="chip">キプロス</span><span class="chip">ギリシャ</span><span class="chip">クロアチア</span><span class="chip">スロベニア</span><span class="chip">ハンガリー</span><span class="chip">ブルガリア</span><span class="chip">ポーランド</span><span class="chip">ラトビア</span><span class="chip">リトアニア</span><span class="chip">ルーマニア</span></div></div></div>
-    <div class="path p3"><div class="pill">③ 郵便では送れない5か国</div><div class="goal">
+    <div class="path p3"><div class="pill">③ 郵便では送れない<s>5</s>→4か国</div><div class="goal">
       <div class="gicon">📦</div><div class="gtitle">SpeedPAK Economy</div>
       <p class="gsub">日本郵便で受け付けていないため</p>
-      <div class="chips"><span class="chip">オーストリア</span><span class="chip">チェコ</span><span class="chip">ドイツ</span><span class="chip">ベルギー</span><span class="chip">ポルトガル</span></div></div></div>
+      <div class="chips"><span class="chip">オーストリア</span><span class="chip">チェコ</span><span class="chip">ドイツ<span class="chg">11/1変更</span></span><span class="chip moved"><s>ベルギー</s> <span class="chg">→ ①へ（11/1）</span></span><span class="chip">ポルトガル</span></div>
+      <p class="gsub">ベルギーは11/1から郵便で前払いOKになりました（料金は未確認）。ドイツはネット販売（BtoC）の郵便物が出せなくなりました。</p></div></div>
   </div>
   <div class="plain-box">
     <h3>11月1日からの新ルール「PID（製品識別コード）」</h3>
